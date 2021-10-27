@@ -4,11 +4,10 @@ import unittest
 
 class TestYandexApi(unittest.TestCase):
 
-    def test_error_create_folder(self):
+    def test_successful_create_folder(self):
         self.assertEqual(create_folder('file_successful'), 201)
 
-
-    def test_successful_create_folder(self):
+    def test_error_create_folder(self):
         self.assertEqual(create_folder('file_successful'), 409)
 
 
